@@ -1,5 +1,0 @@
-[Wed Oct 30 2019 20:10:00 GMT+0500 (RTZ 4 (зима))] layer "+7(968)123-45-67": Expected Either a default asset specification or a layer asset specification but "+" found.
-[Wed Oct 30 2019 20:10:00 GMT+0500 (RTZ 4 (зима))] layer "info@site.ru": Unsupported extension: ru
-[Wed Oct 30 2019 20:10:00 GMT+0500 (RTZ 4 (зима))] layer "+": Expected Either a default asset specification or a layer asset specification but "+" found.
-[Wed Oct 30 2019 20:10:00 GMT+0500 (RTZ 4 (зима))] layer "+7(968)123-45-67": Expected Either a default asset specification or a layer asset specification but "+" found.
-[Wed Oct 30 2019 20:10:00 GMT+0500 (RTZ 4 (зима))] layer "info@site.ru": Unsupported extension: ru

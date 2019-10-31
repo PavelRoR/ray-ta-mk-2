@@ -1,0 +1,42 @@
+section#main
+	.container
+		include ../header
+		.row
+			.col-md-6.col-sm-6
+				h1.main-title Профессиональная переподготовка специалистов со средне-специальным и высшим образованием по направлению
+					span "Трансперсональный анализ личности"
+				h2.main-subtitle Образовательная программа, на 90% состоящая из практических занятий.
+					br
+					| После обучения - официальный диплом!
+				p.main-date Даты проведения: с 4 по 6 ноября,в 19:00 мск
+				+b('button-main','Зарегистрироваться на курс')
+			.col-md-6.col-sm-6
+				.main-images
+					img(src="img/images/main-img-2.png", alt="Декор на главном экране").main-image.main-image-2
+					img(src="img/images/main-img-1.png", alt="Главное изображение").main-image.main-image-1
+		.main-benefits
+			.main-benefits-container
+				mixin ben(cl,p)
+					.main-benefit(class=cl)
+						p.main-benefit-text=p
+				.row
+					.col-md-3.col-sm-3.col-md-offset-3
+						+ben('main-benefit-1','Востребованная профессия с доходом от 100 000 рублей в месяц')
+					.col-md-3.col-sm-3
+						+ben('main-benefit-2','Уникальная методика, которую еще не освоили большинство специалистов')
+					.col-md-3.col-sm-3
+						+ben('main-benefit-3','Гарантированная 100%-ная окупаемость затрат на обучение')
+		.main-abouts
+			.row
+				.col-md-3.col-sm-4
+					.main-about.main-about-1
+						h4.main-about-title 256 часов
+						p.main-about-text Чистое время обучения
+				.col-md-4.col-sm-4.col-md-offset-1
+					.main-about.main-about-2
+						h4.main-about-title 8 тематических модулей
+						p.main-about-text Механика человека, анализ отношений, работа с тенью, анализ структуры мышления, Генные ключи, трансперсональная психология, психологическое консультирование, монетизация
+				.col-md-3.col-sm-4.col-md-offset-1
+					.main-about.main-about-3
+						h4.main-about-title 9 месяцев
+						p.main-about-text Общая длительность курса
