@@ -3,6 +3,16 @@
 //@prepros-prepend jquery.fancybox.min.js
 //@prepros-prepend owl.carousel.min.js
 
+var isIE = false || !!document.documentMode;
+
+if (isIE) {
+    var head = document.getElementsByTagName("head")[0];
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "css/ie.min.css";
+    head.appendChild(link);
+}
+
 $(document).ready(function () {
     $(function () {
         var check = $('.check', this),
@@ -93,7 +103,18 @@ $(document).ready(function () {
             message.slideUp(500);
         });
     });
-
+    $(function () {
+        $('.button-more').click(function () {
+            var l = $(this).attr('data-name');
+            if (this.innerText == 'Развернуть ∨') {
+                this.innerText = 'Свернуть ∧';
+                $('#' + l).slideDown(500);
+            } else {
+                this.innerText = 'Развернуть ∨';
+                $('#' + l).slideUp(500);
+            }
+        });
+    });
     $(function () {
         $('#text-revs').owlCarousel({
             slideSpeed: 200,
@@ -103,7 +124,18 @@ $(document).ready(function () {
             margin: 20,
             nav: true,
             navText: ["‹", "›"],
-            dots: true
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                485: {
+                    items: 2
+                },
+                768: {
+                    items: 3
+                }
+            }
         });
     });
     $(function () {
