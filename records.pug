@@ -1,0 +1,34 @@
+-var head_url = 'https://roleva-yurina.mastervision.su/transpersonal-analytics-2/records/';
+-var head_title = '«Трансперсональная аналитика»';
+-var head_description = 'Записи онлайн-мастер-класса Анны Ролевой и Вероники Юриной';
+-var oferta = '../oferta/oferta_recs.doc';
+-var styles = '../css/recs.min.css';
+-var fav_ico = '../favicon.ico';
+-var fav_png = '../favicon.png';
+-var fb_content = '2030481470529055';
+-var scripts = '../js/recs.min.js'
+
+mixin gt(cl,h3)
+	h3.general-title(class=cl)=h3
+mixin b(cl,href,target,p,id)
+	a.button(class=cl href=href target=target id=id)=p
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		include pug/head
+		include pug/scripts/head_fb_scripts
+	body
+		include pug/scripts/body_top_fb_scripts
+		include pug/recs/1.main.pug
+		include pug/course/2.for.pug
+		include pug/course/3.targets.pug
+		include pug/course/4.plan.pug
+		include pug/course/5.get.pug
+		include pug/course/6.prices.pug
+		include pug/recs/2.records.pug
+		include pug/course/10.footer.pug
+		include pug/course/11.modals.pug
+		include pug/course/12.scripts.pug
+		//- include pug/scripts/chat
+		include pug/scripts/body_bottom_scripts
