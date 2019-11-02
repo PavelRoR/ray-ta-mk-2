@@ -5,30 +5,57 @@ section#records
 		a.button.button-sale.hide(href="https://shop.mastervision.su/?r=ordering/cart/as1&id=4012&clean=true&lg=ru" target="_blank") Купить
 		+gt('','Записи мастер-класса:')
 		#recs
-			ul.recs-links
-				li День 1
-				li День 2
-				li День 3
-			.recs-container
-				.day.day-1
+			ul.nav.nav-tabs.recs-links(role="tablist")
+				li(role="presentation" class="active")
+					a(href="#day-1" aria-controls="home" role="tab" data-toggle="tab") День 1
+				li(role="presentation")
+					a(href="#day-2" aria-controls="home" role="tab" data-toggle="tab") День 2
+				li(role="presentation")
+					a(href="#day-3" aria-controls="home" role="tab" data-toggle="tab") День 3
+			.tab-content
+				.tab-pane.tab-pane.fade.in.active(role="tabpanel")#day-1
 					h4.day-title Запись от 04.11.19
 					.video-wrapper.video-wrapper-rec
 						iframe(src="https://player.vimeo.com/video/"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
-					p.day-text.hide Занятие состоится 04.11.19, в 19:00
-					p.day-text.hide Запись занятия появится здесь 05.11.19, после 13:00
-				.day.day-2
+					p.day-text Занятие состоится 04.11.19, в 19:00
+					p.day-text Запись занятия появится здесь 05.11.19, после 13:00
+				.tab-pane.tab-pane.fade(role="tabpanel")#day-2
 					h4.day-title Запись от 05.11.19
 					.video-wrapper.video-wrapper-rec
 						iframe(src="https://player.vimeo.com/video/"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
-					p.day-text.hide Занятие состоится 05.11.19, в 19:00
-					p.day-text.hide Запись занятия появится здесь 06.11.19, после 13:00
-				.day.day-3
+					p.day-text Занятие состоится 05.11.19, в 19:00
+					p.day-text Запись занятия появится здесь 06.11.19, после 13:00
+				.tab-pane.tab-pane.fade(role="tabpanel")#day-3
 					h4.day-title Запись от 06.11.19
 					.video-wrapper.video-wrapper-rec
 						iframe(src="https://player.vimeo.com/video/"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
-					p.day-text.hide Занятие состоится 06.11.19, в 19:00
-					p.day-text.hide Запись занятия появится здесь 07.11.19, после 13:00
+					p.day-text Занятие состоится 06.11.19, в 19:00
+					p.day-text Запись занятия появится здесь 07.11.19, после 13:00
 			p.day-text.hide Записи занятий будут в открытом доступе до 10.11.19
+			//- ul.recs-links
+			//- 	li День 1
+			//- 	li День 2
+			//- 	li День 3
+			//- .recs-container
+			//- 	.day.day-1
+			//- 		h4.day-title Запись от 04.11.19
+			//- 		.video-wrapper.video-wrapper-rec
+			//- 			iframe(src="https://player.vimeo.com/video/"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
+			//- 		p.day-text.hide Занятие состоится 04.11.19, в 19:00
+			//- 		p.day-text.hide Запись занятия появится здесь 05.11.19, после 13:00
+			//- 	.day.day-2
+			//- 		h4.day-title Запись от 05.11.19
+			//- 		.video-wrapper.video-wrapper-rec
+			//- 			iframe(src="https://player.vimeo.com/video/"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
+			//- 		p.day-text.hide Занятие состоится 05.11.19, в 19:00
+			//- 		p.day-text.hide Запись занятия появится здесь 06.11.19, после 13:00
+			//- 	.day.day-3
+			//- 		h4.day-title Запись от 06.11.19
+			//- 		.video-wrapper.video-wrapper-rec
+			//- 			iframe(src="https://player.vimeo.com/video/"  allowFullScreen mozallowfullscreen webkitAllowFullScreen)
+			//- 		p.day-text.hide Занятие состоится 06.11.19, в 19:00
+			//- 		p.day-text.hide Запись занятия появится здесь 07.11.19, после 13:00
+			//- p.day-text.hide Записи занятий будут в открытом доступе до 10.11.19
 		+gt('general-title-feedback','Ваши вопросы к Анне И Веронике пишите в формах ниже:')
 		.row
 			.col-md-6.col-sm-6
