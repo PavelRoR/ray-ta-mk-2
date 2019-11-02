@@ -1,0 +1,91 @@
+-var price_1 = '60 000р.';
+-var price_2 = '100 000р.';
+-var price_3 = '130 000р.';
+
+-var link_1 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4108&clean=true&lg=ru';
+-var link_2 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4109&clean=true&lg=ru';
+-var link_3 = 'https://shop.mastervision.su/?r=ordering/cart/as1&id=4110&clean=true&lg=ru';
+
+
+section#prices
+	.container
+		+gt('','Выберите свой вариант участия:')
+		.packets
+			.row
+				.col-md-4.col-sm-4
+					.packet
+						.packet-head
+							h4.packet-head-title 
+								small пакет
+								| "Удостоверение"
+						.packet-body
+							ul.packet-body-list
+								li 
+									span.li-bold 93 академических часа (18 недель)
+								li 
+									span.li-bold 4 модуля, ответы на вопросы (раз в 2 недели)
+									span.more-button(data-toggle="modal" data-target="#modal-1") подробнее
+						.packet-footer
+							p.cost Стоимость
+								span=price_1
+							+b('button-cost',link_1,'_blank','Выбрать')
+				.col-md-4.col-sm-4
+					.packet
+						.packet-head
+							h4.packet-head-title 
+								small пакет
+								| "Базовый"
+						.packet-body
+							ul.packet-body-list
+								li
+									span.li-bold 258 академических часов (38 недель)
+								li
+									span.li-bold 8 модулей, ответы на вопросы (раз в 2 недели)
+									span.more-button(data-toggle="modal" data-target="#modal-2") подробнее
+								li 
+									span.li-bold групповая супервизия (2шт)
+									| по отработке материала в процессе обучения, отработка в парах или в мини-группах
+						.packet-footer
+							p.cost Стоимость
+								span=price_2
+							+b('button-cost',link_2,'_blank','Выбрать')
+				.col-md-4.col-sm-4
+					.packet
+						.packet-head
+							h4.packet-head-title 
+								small пакет
+								| "VIP"
+						.packet-body
+							ul.packet-body-list
+								li
+									span.li-bold 258 академических часов (38 недель)
+								li
+									span.li-bold 8 модулей, ответы на вопросы (раз в 2 недели)
+									span.more-button(data-toggle="modal" data-target="#modal-1") подробнее
+								li
+									span.li-bold групповая супервизия (8шт)
+									| по отработке материала в процессе обучения, отработка в парах или в мини-группах
+								li
+									span.li-bold индивидуальная супервизия (8 шт по 30 минут)
+									| для тех, кто не только хочет поучится, но проработать собственные запросы и проблемы
+						.packet-footer
+							p.cost Стоимость
+								span=price_3
+							+b('button-cost',link_3,'_blank','Выбрать')
+		+gt('','Диплом, который вы получите после успешного окончания курса:')
+		.row
+			.col-md-2.col-sm-2
+				a.cert-link(href="../img/cert/cert-1.png" data-fancybox='cert')
+					img.cert-img(src="../img/cert/cert-1.min.png", alt="Изображение диплома")
+			.col-md-3.col-sm-3
+				a.cert-link(href="../img/cert/cert-1.png" data-fancybox='cert')
+					img.cert-img(src="../img/cert/cert-1.min.png", alt="Изображение диплома")
+			.col-md-3.col-sm-3
+				a.cert-link(href="../img/cert/cert-1.png" data-fancybox='cert')
+					img.cert-img(src="../img/cert/cert-1.min.png", alt="Изображение диплома")
+			.col-md-2.col-sm-2
+				a.cert-link(href="../img/cert/cert-1.png" data-fancybox='cert')
+					img.cert-img(src="../img/cert/cert-1.min.png", alt="Изображение диплома")
+			.col-md-2.col-sm-2
+				a.cert-link(href="../img/cert/cert-1.png" data-fancybox='cert')
+					img.cert-img(src="../img/cert/cert-1.min.png", alt="Изображение диплома")
